@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+stack test
+stack haddock
+rm -rf doc/api
+cp -r .stack-work/install/*/*/*/doc doc/api
+git add --all doc/api

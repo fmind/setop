@@ -1,0 +1,91 @@
+name:                  setops
+version:               0.1.0.0
+synopsis:              Setops synopsis.
+description:           Setops description.
+author:                Médéric Hurier <fmind@users.noreply.github.com>
+maintainer:            Médéric Hurier <fmind@users.noreply.github.com>
+copyright:             (c) 2017 Médéric Hurier
+homepage:              https://github.com/fmind/setops
+bug-reports:           https://github.com/fmind/setops/issues
+license:               MIT
+license-file:          LICENSE.txt
+extra-source-files:    README.org
+category:
+tested-with:           GHC
+build-type:            Simple
+cabal-version:         >=1.10
+
+source-repository head
+  type:                git
+  location:            https://github.com/fmind/setops
+
+library
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+  default-extensions:  OverloadedStrings, NoImplicitPrelude
+  ghc-options:         -Wall
+  exposed-modules:     Setops
+  build-depends:       base
+                     , protolude
+                     , containers
+
+executable setops
+  hs-source-dirs:      bin
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  default-extensions:  OverloadedStrings, NoImplicitPrelude
+  ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , protolude
+                     , optparse-applicative
+                     , setops
+
+test-suite hlint
+  hs-source-dirs:      test
+  main-is:             hlint.hs
+  default-language:    Haskell2010
+  default-extensions:  OverloadedStrings
+  type:                exitcode-stdio-1.0
+  ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , protolude
+                     , hlint
+                     , setops
+
+test-suite hspec
+  hs-source-dirs:      test
+  main-is:             hspec.hs
+  default-language:    Haskell2010
+  default-extensions:  OverloadedStrings, NoImplicitPrelude, ScopedTypeVariables
+  type:                exitcode-stdio-1.0
+  ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
+  other-modules:       SetopsSpec
+  build-depends:       base
+                     , protolude
+                     , containers
+                     , hspec
+                     , setops
+
+test-suite doctest
+  hs-source-dirs:      test
+  main-is:             doctest.hs
+  default-language:    Haskell2010
+  default-extensions:  OverloadedStrings
+  type:                exitcode-stdio-1.0
+  ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , Glob
+                     , doctest
+                     , setops
+
+benchmark criterion
+  hs-source-dirs:      bench
+  main-is:             bench.hs
+  default-language:    Haskell2010
+  default-extensions:  OverloadedStrings
+  type:                exitcode-stdio-1.0
+  ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
+  other-modules:       SetopsBench
+  build-depends:       base
+                     , criterion
+                     , setops
