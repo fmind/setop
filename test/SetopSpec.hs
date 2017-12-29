@@ -1,6 +1,6 @@
-module SetopsSpec (spec) where
+module SetopSpec (spec) where
 
-import Setops
+import Setop
 import Protolude
 
 import Test.Hspec

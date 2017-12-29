@@ -2,15 +2,15 @@
 -- See Hoogle, http://www.haskell.org/hoogle/
 
 
--- | Setops synopsis.
+-- | Setop synopsis.
 --   
---   Setops description.
-@package setops
+--   Setop description.
+@package setop
 @version 0.1.0.0
 
 
 -- | Implementation of Set Operations.
-module Setops
+module Setop
 
 -- | Set construction.
 fromList :: Ord a => [a] -> Set a

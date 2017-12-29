@@ -1,8 +1,8 @@
 module Main where
 
-import qualified SetopsBench
+import qualified SetopBench
 
 import Criterion.Main (bgroup, defaultMain)
 
 main :: IO ()
-main = defaultMain [ bgroup "Setops" SetopsBench.benchmarks ]
+main = defaultMain [ bgroup "Setop" SetopBench.benchmarks ]

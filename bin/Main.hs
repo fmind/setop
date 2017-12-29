@@ -2,7 +2,7 @@
 
 module Main where
 
--- import           Setops
+-- import           Setop
 import           Protolude
 
 -- import qualified System.IO as SIO

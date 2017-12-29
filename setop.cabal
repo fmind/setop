@@ -1,12 +1,12 @@
-name:                  setops
+name:                  setop
 version:               0.1.0.0
-synopsis:              Setops synopsis.
-description:           Setops description.
+synopsis:              Setop synopsis.
+description:           Setop description.
 author:                Médéric Hurier <fmind@users.noreply.github.com>
 maintainer:            Médéric Hurier <fmind@users.noreply.github.com>
 copyright:             (c) 2017 Médéric Hurier
-homepage:              https://github.com/fmind/setops
-bug-reports:           https://github.com/fmind/setops/issues
+homepage:              https://github.com/fmind/setop
+bug-reports:           https://github.com/fmind/setop/issues
 license:               MIT
 license-file:          LICENSE.txt
 extra-source-files:    README.org
@@ -17,19 +17,19 @@ cabal-version:         >=1.10
 
 source-repository head
   type:                git
-  location:            https://github.com/fmind/setops
+  location:            https://github.com/fmind/setop
 
 library
   hs-source-dirs:      src
   default-language:    Haskell2010
   default-extensions:  OverloadedStrings, NoImplicitPrelude
   ghc-options:         -Wall
-  exposed-modules:     Setops
+  exposed-modules:     Setop
   build-depends:       base
                      , protolude
                      , containers
 
-executable setops
+executable setop
   hs-source-dirs:      bin
   main-is:             Main.hs
   default-language:    Haskell2010
@@ -38,7 +38,7 @@ executable setops
   build-depends:       base
                      , protolude
                      , optparse-applicative
-                     , setops
+                     , setop
 
 test-suite hlint
   hs-source-dirs:      test
@@ -50,7 +50,7 @@ test-suite hlint
   build-depends:       base
                      , protolude
                      , hlint
-                     , setops
+                     , setop
 
 test-suite hspec
   hs-source-dirs:      test
@@ -59,12 +59,12 @@ test-suite hspec
   default-extensions:  OverloadedStrings, NoImplicitPrelude, ScopedTypeVariables
   type:                exitcode-stdio-1.0
   ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
-  other-modules:       SetopsSpec
+  other-modules:       SetopSpec
   build-depends:       base
                      , protolude
                      , containers
                      , hspec
-                     , setops
+                     , setop
 
 test-suite doctest
   hs-source-dirs:      test
@@ -76,16 +76,16 @@ test-suite doctest
   build-depends:       base
                      , Glob
                      , doctest
-                     , setops
+                     , setop
 
-benchmark criterion
-  hs-source-dirs:      bench
-  main-is:             bench.hs
-  default-language:    Haskell2010
-  default-extensions:  OverloadedStrings
-  type:                exitcode-stdio-1.0
-  ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
-  other-modules:       SetopsBench
-  build-depends:       base
-                     , criterion
-                     , setops
+-- benchmark criterion
+--   hs-source-dirs:      bench
+--   main-is:             bench.hs
+--   default-language:    Haskell2010
+--   default-extensions:  OverloadedStrings
+--   type:                exitcode-stdio-1.0
+--   ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
+--   other-modules:       SetopBench
+--   build-depends:       base
+--                      , criterion
+--                      , setop

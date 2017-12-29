@@ -1,6 +1,6 @@
 -- |Implementation of Set Operations.
 
-module Setops where
+module Setop where
 
 import Protolude
 import qualified Data.Set as S

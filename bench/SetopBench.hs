@@ -1,6 +1,6 @@
-module SetopsBench (benchmarks) where
+module SetopBench (benchmarks) where
 
-import Setops
+import Setop
 
 import Criterion
 
