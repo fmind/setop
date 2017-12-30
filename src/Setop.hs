@@ -9,6 +9,10 @@ import qualified Data.Set as S
 fromList :: Ord a => [a] -> Set a
 fromList = S.fromList
 
+-- |Set export to list.
+toList :: Set a -> [a]
+toList = S.toAscList
+
 -- |Set Union on two sets.
 --
 -- >>> fromList [0, 1, 2] `union` fromList [0, 2, 4]

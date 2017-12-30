@@ -1,8 +1,10 @@
 #!/bin/bash
 set -e
 
+DOC=$(stack path --local-doc-root)
+
 stack test
 stack haddock
 rm -rf doc/api
-cp -r .stack-work/install/*/*/*/doc doc/api
+cp -r "$DOC" doc/api
 git add --all doc/api

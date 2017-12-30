@@ -15,6 +15,9 @@ module Setop
 -- | Set construction.
 fromList :: Ord a => [a] -> Set a
 
+-- | Set export to list.
+toList :: Set a -> [a]
+
 -- | Set Union on two sets.
 --   
 --   <pre>

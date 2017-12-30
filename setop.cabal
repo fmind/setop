@@ -36,20 +36,9 @@ executable setop
   default-extensions:  OverloadedStrings, NoImplicitPrelude
   ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:       base
+                     , text
                      , protolude
                      , optparse-applicative
-                     , setop
-
-test-suite hlint
-  hs-source-dirs:      test
-  main-is:             hlint.hs
-  default-language:    Haskell2010
-  default-extensions:  OverloadedStrings
-  type:                exitcode-stdio-1.0
-  ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
-  build-depends:       base
-                     , protolude
-                     , hlint
                      , setop
 
 test-suite hspec
@@ -66,17 +55,23 @@ test-suite hspec
                      , hspec
                      , setop
 
+test-suite hlint
+  hs-source-dirs:      test
+  main-is:             hlint.hs
+  default-language:    Haskell2010
+  type:                exitcode-stdio-1.0
+  ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , hlint
+
 test-suite doctest
   hs-source-dirs:      test
   main-is:             doctest.hs
   default-language:    Haskell2010
-  default-extensions:  OverloadedStrings
   type:                exitcode-stdio-1.0
   ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:       base
-                     , Glob
                      , doctest
-                     , setop
 
 -- benchmark criterion
 --   hs-source-dirs:      bench
