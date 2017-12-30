@@ -2,9 +2,11 @@
 set -e
 
 DOC=$(stack path --local-doc-root)
+COV=$(stack path --local-hpc-root)
 
 stack test
 stack haddock
-rm -rf doc/api
-cp -r "$DOC" doc/api
-git add --all doc/api
+
+rsync --delete "$DOC" doc/api
+rsync --delete "$COV" doc/cov
+git add --all doc/api doc/cov
