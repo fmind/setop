@@ -9,7 +9,8 @@ homepage:              https://github.com/fmind/setop
 bug-reports:           https://github.com/fmind/setop/issues
 license:               MIT
 license-file:          LICENSE.txt
-extra-source-files:    README.org
+extra-source-files:    README.md
+                       CHANGELOG.md
 category:              Tools
 tested-with:           GHC
 build-type:            Simple
