@@ -1,5 +1,5 @@
 name:                  setop
-version:               0.1.0.0
+version:               0.1.0.1
 synopsis:              Perform set operations on files.
 description:           Find more information on the project homepage.
 author:                Médéric Hurier <fmind@users.noreply.github.com>
