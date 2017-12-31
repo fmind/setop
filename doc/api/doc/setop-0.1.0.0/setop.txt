@@ -4,7 +4,7 @@
 
 -- | Perform set operations on files.
 --   
---   find more information in README.org.
+--   Find more information on the project homepage.
 @package setop
 @version 0.1.0.0
 

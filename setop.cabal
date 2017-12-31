@@ -1,7 +1,7 @@
 name:                  setop
 version:               0.1.0.0
 synopsis:              Perform set operations on files.
-description:           find more information in README.org.
+description:           Find more information on the project homepage.
 author:                Médéric Hurier <fmind@users.noreply.github.com>
 maintainer:            Médéric Hurier <fmind@users.noreply.github.com>
 copyright:             (c) 2017 Médéric Hurier
