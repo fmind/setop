@@ -2,9 +2,9 @@
 -- See Hoogle, http://www.haskell.org/hoogle/
 
 
--- | Setop synopsis.
+-- | Perform set operations on files.
 --   
---   Setop description.
+--   find more information in README.org.
 @package setop
 @version 0.1.0.0
 
