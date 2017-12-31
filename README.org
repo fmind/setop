@@ -14,7 +14,7 @@ Setop helps you run these set operations on your files.
 
 Let's introduce two line-separated files: =A.txt= and =B.txt=.
 
-A.txt (numbers from 0 to 5 included)
+=A.txt= contains all numbers from 0 to 5 included
 #+BEGIN_EXAMPLE
 0
 1
@@ -24,7 +24,7 @@ A.txt (numbers from 0 to 5 included)
 5
 #+END_EXAMPLE
 
-B.txt (even numbers from 0 to 8 included)
+=B.txt= contains all even numbers from 0 to 8 included
 #+BEGIN_EXAMPLE
 0
 2
