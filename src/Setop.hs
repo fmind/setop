@@ -1,4 +1,5 @@
 -- |Implementation of Set Operations.
+{-# LANGUAGE NoImplicitPrelude #-}
 
 module Setop where
 
