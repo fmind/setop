@@ -1,9 +1,7 @@
 # Setop: Perform set operations on files
 
-[![build](https://img.shields.io/travis/fmind/setop.svg)](https://travis-ci.org/fmind/setop)
 [![hackage](https://img.shields.io/hackage/v/setop.svg)](https://hackage.haskell.org/package/setop)
 [![hackage-deps](https://img.shields.io/hackage-deps/v/setop.svg)](https://hackage.haskell.org/package/setop)
-[![license](https://img.shields.io/github/license/fmind/setop.svg)](https://github.com/fmind/setop/blob/master/LICENSE.txt)
  	
 ## Rationale
 
