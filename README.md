@@ -1,7 +1,6 @@
 # Setop: Perform set operations on files
 
 [![hackage](https://img.shields.io/hackage/v/setop.svg)](https://hackage.haskell.org/package/setop)
-[![hackage-deps](https://img.shields.io/hackage-deps/v/setop.svg)](https://hackage.haskell.org/package/setop)
  	
 ## Rationale
 
