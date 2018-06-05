@@ -1,7 +1,7 @@
 # Setop: Perform set operations on files
 
 [![hackage](https://img.shields.io/hackage/v/setop.svg)](https://hackage.haskell.org/package/setop)
- 	
+
 ## Rationale
 
 [Set operations](https://en.wikipedia.org/wiki/Set_(mathematics)#Basic_operations) are a convenient solution to common problems:
